@@ -3,6 +3,7 @@ body {
     font-family:fantasy;
   
 }
+/* Top Navbar */
 .navbar
 {
     background-color: blue;
@@ -23,6 +24,9 @@ body {
     padding: 14px 16px;
     
 }
+/*End - Top Navbar */
+
+/* Second Navbar */
 .navbar-2
 {
     position: sticky;
@@ -50,6 +54,18 @@ body {
     text-decoration: none;
     color: black;
 }
+.navbar-2 li a:before
+{
+    position: absolute;
+    content: '';
+    background: blue;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    left: 0;
+    top: 0;
+    transition: all 0.3s ;
+}
 .navbar-2 a:hover
 {
     color: blue;
@@ -65,7 +81,10 @@ body {
 {
     float: right;
 }
+/* End - Second Navbar */
 
+
+/* Home */
 .container
 {
     display: flex;
@@ -132,8 +151,9 @@ body {
     color: blue;
     font-size: 30px;
 }
+/* End Home */
 
-
+/* second-Container */
 .wrapper{
     display: flex;
     justify-content: space-around;
@@ -174,10 +194,18 @@ body {
     transform: translateY(0);   
     z-index: -1;
 }
-.wrapper, .box i:hover
+.wrapper:hover
 {
     color: white;
 }
+
+.box i:hover
+{
+    color: white;
+}
+/* End Container-2 */
+
+/* About */
 .wrapper-2
 {
     background-color: #f6f8fe;
@@ -190,7 +218,6 @@ body {
     align-items: center;
     text-align: center;
     height: 50vh;
-
 }
 .wrapper-items span
 {
@@ -252,7 +279,9 @@ body {
     height: 40px; 
 }
 
+/* End About Section */
 
+/* Services */
 .wrapper2-items{
     margin-top: 20px;
     display: flex;
@@ -322,6 +351,11 @@ body {
 {
     color: blue;
 }
+/* End Services */
+
+
+
+/* Contact */
 .card-left-box
 {
     background-color: white;
